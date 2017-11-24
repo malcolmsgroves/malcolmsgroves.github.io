@@ -523,6 +523,18 @@
 			padding-left: 0.5em;
 		}
 
+		/* my touch */
+		&.contact-list {
+			list-style: none;
+			> li {
+				font-size: 18px;
+				padding-bottom: 10px;
+				> a > span.icon {
+					margin-right: 10px;
+				}
+			}
+		}
+
 		&.alt {
 			list-style: none;
 			padding-left: 0;
@@ -1029,7 +1041,7 @@
 	#one {
 		&:before {
 			background-image: url('../../images/banner.jpg');
-			background-position: top right;
+			background-position: center right;
 			background-repeat: no-repeat;
 			background-size: cover;
 			content: '';
@@ -1426,6 +1438,7 @@
 					.avatar {
 						margin: 0 auto (_size(element-margin) * 0.75) auto;
 						width: 6em;
+
 					}
 
 					h1 {
@@ -1526,6 +1539,7 @@
 		/* List */
 
 			ul {
+
 				&.actions {
 					margin: 0 0 _size(element-margin) 0;
 
