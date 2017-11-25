@@ -19,9 +19,18 @@ $tabs.on('click', function(event) {
 let highlightTab =  function(id) {
 	$('li').children().removeClass('selected');
   $(`a#${id}`).addClass('selected');
+  console.log(frame[id]);
+
   $frame.animate({
     top: frame[id] * -600,
-  }, 400);
+  }, 400, function() {
+    console.log('done');
+  });
+  console.log(id);
+
 };
 
-$(highlightTab('tiles'));
+$(function() {
+  highlightTab('tiles');
+}
+);
