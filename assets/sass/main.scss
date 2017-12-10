@@ -554,15 +554,22 @@
 		&.feature-icons {
 			list-style: none;
 			padding-left: 0;
+			text-align: center;
 
 			li {
-				@include icon;
 				display: inline-block;
-				margin: 0 0 (_size(element-margin) * 0.75) 0;
-				padding: 0.35em 0 0 3.5em;
+				margin: 0.35em 0.69em 1em 0.69em;
+				padding: 0;
 				position: relative;
 				vertical-align: top;
 				width: 48%;
+				width: 100px;
+				text-align: center;
+
+				img {
+					width: 100px;
+					height: 100px;
+				}
 
 				&:before {
 					background: _palette(accent1, bg);
@@ -577,6 +584,9 @@
 					top: 0;
 					width: 2.5em;
 				}
+			}
+			ul.row {
+				margin-top: 2.25em;
 			}
 		}
 
@@ -865,11 +875,15 @@
 				padding-top: 0;
 			}
 
+			a:hover {
+				color: red !important;
+			}
+
 			.image {
 				display: inline-block;
-				padding-right: 2.5em;
+				margin-right: 2.5em;
 				vertical-align: middle;
-				width: 48%;
+				width: 40%;
 
 				img {
 					display: block;

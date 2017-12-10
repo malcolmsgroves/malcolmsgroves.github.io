@@ -4,6 +4,7 @@
 	Read Only by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+	sass --watch sass:css
 */
 /* Reset */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
@@ -1597,22 +1598,20 @@ ul {
         padding-top: 0; }
   ul.feature-icons {
     list-style: none;
-    padding-left: 0; }
+    padding-left: 0;
+    text-align: center; }
     ul.feature-icons li {
-      text-decoration: none;
       display: inline-block;
-      margin: 0 0 1.6875em 0;
-      padding: 0.35em 0 0 3.5em;
+      margin: 0.35em 0.69em 1em 0.69em;
+      padding: 0;
       position: relative;
       vertical-align: top;
-      width: 48%; }
-      ul.feature-icons li:before {
-        -moz-osx-font-smoothing: grayscale;
-        -webkit-font-smoothing: antialiased;
-        font-family: FontAwesome;
-        font-style: normal;
-        font-weight: normal;
-        text-transform: none !important; }
+      width: 48%;
+      width: 100px;
+      text-align: center; }
+      ul.feature-icons li img {
+        width: 100px;
+        height: 100px; }
       ul.feature-icons li:before {
         background: #546785;
         border-radius: 100%;
@@ -1625,6 +1624,8 @@ ul {
         text-align: center;
         top: 0;
         width: 2.5em; }
+    ul.feature-icons ul.row {
+      margin-top: 2.25em; }
   ul.icons {
     cursor: default;
     list-style: none;
@@ -1844,11 +1845,13 @@ input[type="button"],
   .features article:first-child {
     border-top: 0;
     padding-top: 0; }
+  .features article a:hover {
+    color: red !important; }
   .features article .image {
     display: inline-block;
-    padding-right: 2.5em;
+    margin-right: 2.5em;
     vertical-align: middle;
-    width: 48%; }
+    width: 40%; }
     .features article .image img {
       display: block;
       width: 100%; }
